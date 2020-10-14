@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+.box__jumbotron {
+  display: flex;
+}
+
+
+.box1 {
+
+  top: 0;
+}
+
+.box2 {
+  position: absolute;
+  right: 0;
+  bottom: 0rem;
+}
+
+.hp {
+  left: 10.5rem;
+  top: 20rem;
+  border-radius: 2.5rem;
+  -webkit-box-shadow: 6px 5px 21px -6px rgba(0,0,0,0.86); 
+  box-shadow: 6px 5px 21px -6px rgba(0,0,0,0.86);
+}
+
+aside {
+  /* margin-right: 10rem; */
+  /* position: relative; */
+  display: flex;
+  position: relative;
+  left: -4.7rem;
+  top: 3rem;
+}
+
+.text {
+  margin-left: 4rem;
+}
+
+aside h1 {
+  font-size: 2rem;
+  margin-top: 20%;
+}
+
+aside p {
+  /* background: red; */
+  width: 55%;
+  margin-top: 1rem;
+  line-height: 1.7rem;
+  color: #A09FA4;
+}
+
+.text2 {
+  display: none;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .box2 {
+    display: none;
+  }
+
+  .box__jumbotron {
+    flex-direction: column;
+  }
+
+  .box1 {
+    position: absolute;
+    left: -2.5rem;
+    z-index: -1;
+  }
+
+  aside {
+    flex-direction: column;
+    position: absolute;
+    left: 30%;
+  }
+
+  .hp {
+    width: 70vw;
+    margin-top: 3rem;
+    margin-left: -3.5rem;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .text2 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    top: 55rem;
+  }
+
+  .text2 h1 {
+    font-size: 3rem;
+  }
+
+  .text2 p {
+    padding: 0 1rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+    color: #A09FA4;
+  }
+
+}
